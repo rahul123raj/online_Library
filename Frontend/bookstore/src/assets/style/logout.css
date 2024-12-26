@@ -1,0 +1,20 @@
+.logout{
+    height: 50px;
+    background-color: black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logout a{
+    font-family: monospace;
+    font-style: italic;
+    font-size: large;
+    color: white;
+    padding: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+    z-index: 1000;
+}

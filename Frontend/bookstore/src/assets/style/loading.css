@@ -1,0 +1,39 @@
+/* Loading Container */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full-screen height */
+  background-color: #f9f9f9; /* Light background */
+}
+
+/* Loading Circle */
+.loading .circle {
+  width: 30px; /* Diameter of the circle */
+  height: 30px;
+  border: 8px solid rgb(31, 30, 30); /* Transparent border */
+  border-top: 8px dotted #3498db;
+  /* border-bottom: 8px dotted #3498db; */
+   /* Blue color */
+  border-radius: 50%; /* Makes it a circle */
+  animation: spin 1.5s ease-in-out infinite; /* Infinite spinning animation */
+}
+
+/* Animation Keyframes */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* Start position */
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg); /* Full rotation */
+  }
+}

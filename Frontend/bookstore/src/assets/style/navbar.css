@@ -1,0 +1,68 @@
+.navbar{
+    background: linear-gradient(rgb(35, 35, 241),skyblue ,white);
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    position: fixed;
+}
+
+.navbar .logo{
+    width: 250px;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aliceblue; */
+}
+
+.navbar .logo img{
+    width: 100%;
+
+}
+
+
+.navbar .links{
+    width: 80%;
+    height: 100%;
+    /* background-color: blue; */
+    margin-left: 150px;
+}
+
+.navbar ul{
+    height: 100%;
+    /* background-color: antiquewhite; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.navbar a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(20, 34, 34); 
+    text-shadow: 0 0 7px rgba(3, 170, 221, 0.938);
+}
+
+.navbar a:hover{
+    filter: brightness(0.6);
+    text-decoration: solid underline;
+}
+
+#logout{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(20, 34, 34); 
+    text-shadow: 0 0 7px rgba(3, 170, 221, 0.938);   
+    position: relative;
+}
+
+#logout .dropdown{
+    position: absolute;
+    top: 25px;
+    right: 2px;
+    width: 150px;
+
+}

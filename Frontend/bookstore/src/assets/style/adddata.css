@@ -1,0 +1,114 @@
+.addbook-up{
+  height: 110px; 
+   /* background-color: #1b1a1a; */
+}
+
+/* Container for the form */
+.addbook {
+  width: 100vw;
+  /* height: 60vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #f8f9fa; */
+  background: linear-gradient(white,rgb(60, 190, 241), rgb(6, 178, 221));
+
+  padding: 20px;
+  /* box-sizing: border-box; */
+  overflow: auto;
+}
+
+/* Form Styling */
+.addbook form {
+  width: 60%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Form Group */
+.addbook .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Label Styling */
+.addbook label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Input Styling */
+.addbook input[type="text"],
+.addbook input[type="number"],
+.addbook input[type="date"],
+.addbook textarea,
+.addbook select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.addbook input[type="text"]:focus,
+.addbook input[type="number"]:focus,
+.addbook input[type="date"]:focus,
+.addbook textarea:focus,
+.addbook select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Button Styling */
+.addbook button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addbook button:hover {
+  background-color: #0056b3;
+}
+
+/* Textarea Styling */
+.addbook textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .addbook .addbook form {
+    width: 90%;
+  }
+
+  .addbook label {
+    font-size: 14px;
+  }
+
+ .addbook input[type="text"],
+ .addbook input[type="number"],
+ .addbook input[type="date"],
+ .addbook textarea,
+ .addbook select {
+    font-size: 12px;
+  }
+
+  .addbook button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}

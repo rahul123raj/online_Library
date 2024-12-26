@@ -1,0 +1,47 @@
+.users-data tr, .users-data th,.users-data td{
+    border: 2px solid ;
+    box-shadow: 0 0 10px darkcyan;
+}
+
+.users-data{
+    width: 100vw;
+    height: 90vh;
+}
+
+.user-table{
+    /* background-color: rgb(80, 50, 5); */
+    height: 150px;
+}
+
+.users-data table{
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+    font-size: larger;
+    /* margin-top: 100px; */
+
+}
+.users-data th,.users-data td{
+    width: 90px;
+    height: 60px;
+}
+.users-data th{
+    background: linear-gradient(white,silver,white );
+    
+}
+
+.users-data button{
+    padding: 5px;
+    background-color: red;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.users-data button:hover{
+    filter: brightness(.7);
+}

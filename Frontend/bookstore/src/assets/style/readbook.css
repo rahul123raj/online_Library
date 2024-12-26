@@ -1,0 +1,148 @@
+.read-outside{
+    height: 110px;
+    /* background-color: tomato; */
+}
+
+/* Read Card Container */
+.read-card {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background: linear-gradient(45deg, #f8f8f8, #ffffff);
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Image Section */
+  .read-card .image {
+    flex: .3;
+    /* position: sticky; */
+    
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .read-card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .read-card .image p {
+    /* position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 20px; */
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 15px;
+    border-radius: 5px;
+  }
+  
+  
+  /* Read Info Section */
+  .read-info {
+    flex: 1;
+    max-width: 55%;
+    height: 100%;
+    padding: 50px auto;
+    color: #333;
+    overflow-y: scroll;
+    /* box-shadow: 0 0 15px gray; */
+  }
+  
+  /* Title and Book Info */
+  .read-info h3 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .read-info .isbn,
+  .read-info .page-count,
+  .read-info .short-description {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  /* Long Description */
+  .read-info h1 {
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .read-info .long-description {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #444;
+  }
+  
+  /* Info Section (Status, Authors, Categories) */
+  .read-info .infos p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 6px;
+  }
+  
+  .read-info .infos p strong {
+    font-weight: bold;
+    color: #222;
+  }
+
+  .read-info .infos{
+    display: flex;
+    /* background-color: #222; */
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .read-info .infos button{
+    margin-right: 20px;
+    padding: 10px;
+    color: rgb(34, 33, 33);
+    background-color: greenyellow;
+    font-size: larger;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: capitalize;
+    cursor: pointer;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 768px) {
+    .read-card {
+      flex-direction: column;
+      height: auto;
+    }
+    .read-card .image, .read-card .read-info {
+      max-width: 100%;
+    }
+    .read-card .image p {
+      font-size: 16px;
+      left: 10px;
+    }
+    .read-info h3 {
+      font-size: 24px;
+    }
+    .read-info h1 {
+      font-size: 20px;
+    }
+  }
+  
