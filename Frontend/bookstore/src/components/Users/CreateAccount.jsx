@@ -62,6 +62,7 @@ try {
     {/* <div className="adduser-main"></div> */}
     <div className="adduser">
       <img src={logo} alt="" />
+      <div className="create">
   <h1>Create Account</h1>
   <form action="" ref={userFormdata} onSubmit={handleAddusers}>
     <div className="form-group">
@@ -96,6 +97,7 @@ try {
     
     <button type="submit">{loading ? <Loading /> : "Submit"}</button>
   </form>
+  </div>
 </div>
 
     </>

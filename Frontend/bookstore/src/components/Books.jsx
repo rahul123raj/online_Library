@@ -84,7 +84,10 @@ const Books = () => {
           <button className="search-button">Search</button>
         </div>
 
-        {loading ? ( // Render spinner while loading
+
+          <div className="books-main">
+          {loading ? ( 
+            // Render spinner while loading
           <Loading />
         ) : (
           <div className="books">
@@ -134,7 +137,9 @@ const Books = () => {
               );
             })}
           </div>
-        )}
+                 )}
+          </div>
+ 
       </div>
     </div>
   );

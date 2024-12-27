@@ -4,17 +4,26 @@
     width: 100vw;
     height: 100vh;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
-    /* justify-content: center; */
+    justify-content: space-evenly;
     /* margin-top: 50px ; */
     background: linear-gradient( #ff7e5f,#feb47b,#86a8e7,#91eac9);
 
   }
 
+  .adduser .create{
+    width: 30%;
+    max-width: 400px;
+    
+  }
+
+  
+
   .adduser img{
-    width: 200px;
+    width: 300px;
     /* background-color: #45a049; */
+    box-shadow: 0 0 10px #555;
     
   }
   
@@ -22,19 +31,29 @@
     font-size: 2rem;
     margin-bottom: 20px;
     color: #333;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
   }
   
   .adduser form {
-    width: 80%;
+    width: 100%;
     max-width: 400px;
     background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #555;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
   }
   
   .adduser .form-group {
     margin-bottom: 15px;
+    /* background-color: #45a049; */
+    width: 100%;
   }
   
   .adduser .form-group label {
@@ -52,10 +71,11 @@
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    /* background-color: #45a049; */
   }
   
   .adduser button {
-    width: 100%;
+    width: 80%;
     padding: 10px;
     font-size: 1rem;
     background-color: #4CAF50;
@@ -63,7 +83,8 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 10px ;
+    /* justify-self: center; */
   }
   
   .adduser button:hover {

@@ -13,11 +13,26 @@
 .book-main .search-container{
     position: fixed;
 }
+
+.books-main{
+    height: 100vh;
+    /* background-color: yellow; */
+    display: flex; 
+    justify-content: center;
+    /* align-items: center; */
+     /* Ensure it takes the full viewport height */
+}
 .books{
  /* Apply background color to the entire container */
-    min-height: 100vh; /* Ensure it takes the full viewport height */
     padding: 20px; /* Add some padding around the books */
     overflow-y: auto;
+    /* background-color: yellowgreen; */
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 40px;
+    justify-content: space-evenly;
 }
 .books .cards{
     width: 30vw;
@@ -33,12 +48,7 @@
 }
 
 
-.books{
-    display: grid;
-    grid-template-columns: auto auto;
-    row-gap: 40px;
-    justify-content: space-evenly;
-}
+
 
 .cards .image{
     width: 35%;
