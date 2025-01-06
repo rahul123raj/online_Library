@@ -54,13 +54,13 @@ const storage = multer.diskStorage({
   
       let { title, isbn, pageCount, publishedDate, shortDescription, longDescription, status, authors, categories } = req.body;
   
-      console.log("Before processing:", authors, categories);
+      // console.log("Before processing:", authors, categories);
   
       // Parse authors and categories if provided as JSON strings
       authors = authors ? JSON.parse(authors) : [];
       categories = categories ? JSON.parse(categories) : [];
   
-      console.log("After processing:", authors, categories);
+      // console.log("After processing:", authors, categories);
   
       // Create and store the book in the database
       let payload = await bookModel.create({

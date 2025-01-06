@@ -12,7 +12,7 @@ const postUser = async (req,res) =>{
             message: 'user data posted',
             payload
         })
-        console.log(payload)
+        // console.log(payload)
     } catch (error) {
         console.log('error posting user',error)
         res.status(500).json({
@@ -34,7 +34,7 @@ const getUserbyId = async (req,res) =>{
             message: 'user data found by id',
             payload
         })
-        console.log(payload)
+        // console.log(payload)
     } catch (error) {
         console.log('error geting user',error)
         res.status(500).json({
@@ -56,7 +56,7 @@ const getUser = async (req,res) =>{
             message: 'user data found ',
             payload
         })
-        console.log(payload)
+        // console.log(payload)
     } catch (error) {
         console.log('error geting user',error)
         res.status(500).json({

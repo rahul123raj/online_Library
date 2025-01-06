@@ -12,7 +12,7 @@ const Users = () => {
     axios.get('http://localhost:5000/bookdata/user')
       .then((resp) => {
         setUsers(resp.data.payload); // Assuming payload is an array
-        console.log(resp.data.payload);
+        // console.log(resp.data.payload);
       })
       .catch(error => console.error('Error fetching users:', error));
   }, [newuser]);
