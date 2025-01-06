@@ -5,7 +5,14 @@ const dotenv = require('dotenv')
 const router = require("./Routes/routes.js")
 const cors = require('cors')
 
-app.use(cors())
+const corsOptions = {
+    origin: "https://online-library-1-7ilo.onrender.com",
+    credentials: true
+}
+
+app.use(cors(corsOptions))
+
+app.use(express.urlencoded({extended: true}))
 dotenv.config()
 app.use(express.json())
 
