@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { useNavigate } from "react-router";
 import { NavLink } from "react-router-dom";
+import { USER_API } from "../../utils/constant";
 
 const Userslogin = () => {
   let emailField = useRef();
@@ -16,7 +17,7 @@ const Userslogin = () => {
 
     try {
       // Fetch the user data from the server
-      let resp = await fetch(`http://localhost:5000/bookdata/user/${email}`);
+      let resp = await fetch(`${USER_API}/${email}`);
 
       // Check if the response is not successful
       if (!resp.ok) {

@@ -4,6 +4,7 @@ import { useLocation, useNavigate } from 'react-router';
 import '../assets/style/books.css';
 import Filter from './Filter.jsx';
 import Loading from './Loading.jsx';
+import { BOOK_API } from '../utils/constant.jsx';
 
 const Books = () => {
   const location = useLocation();
@@ -21,7 +22,7 @@ const Books = () => {
       setLoading(true); // Start loading immediately
       try {
         const resp = await axios.get(
-          `http://localhost:5000/bookdata/book?filter=${selectedCategories}&search=${search}`
+          `${BOOK_API}?filter=${selectedCategories}&search=${search}`
         );
         setBooks(resp.data.payload);
       } catch (error) {
@@ -39,7 +40,7 @@ const Books = () => {
   };
 
   const handleDelete = (id) => {
-    fetch(`http://localhost:5000/bookdata/book/${id}`, { method: 'DELETE' })
+    fetch(`${BOOK_API}/${id}`, { method: 'DELETE' })
       .then((response) => {
         if (response.ok) {
           alert('Item deleted successfully');

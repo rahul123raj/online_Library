@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import '../assets/style/filter.css';
+import { BOOK_API } from "../utils/constant";
 
 const Filter = ({ onCategoryChange, selectedCategories }) => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:5000/bookdata/book/category')
+    axios.get(`${BOOK_API}/category`)
       .then(res => setCategories(res.data.categories));
   }, []);
 

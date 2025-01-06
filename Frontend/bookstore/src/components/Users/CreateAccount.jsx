@@ -3,6 +3,7 @@ import '../../assets/style/createaccount.css'
 import logo from '../../assets/image/logo_library.png'
 import Loading from "../Loading"
 import { useNavigate } from "react-router-dom"
+import { USER_API } from "../../utils/constant"
 
 const CreateAccount = () => {
 
@@ -32,7 +33,7 @@ const CreateAccount = () => {
   
 
 try {
-  const response = await fetch("http://localhost:5000/bookdata/user", {
+  const response = await fetch(USER_API, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(newUser),

@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import '../../assets/style/adddata.css';
 import Loading from "../Loading";
+import { BOOK_API } from "../../utils/constant";
 
 const AddBooks = () => {
 
@@ -21,7 +22,7 @@ const AddBooks = () => {
     setLoading(true)
 
     try {
-      const response = await fetch(`http://localhost:5000/bookdata/book`, {
+      const response = await fetch(`${BOOK_API}`, {
         method: 'POST',
         body: formData,
       });

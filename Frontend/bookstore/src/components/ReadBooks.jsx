@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useNavigate, useParams } from "react-router"
 import '../assets/style/readbook.css'
+import { BOOK_API } from "../utils/constant"
 
 const ReadBooks = () => {
     let params = useParams()
@@ -10,7 +11,7 @@ const ReadBooks = () => {
     useEffect(() => {
         const fetchapi = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/bookdata/book/${bookId}`);
+                const response = await fetch(`${BOOK_API}/${bookId}`);
                 
                 if (!response.ok) {
                     throw new Error(`Error: ${response.statusText}`);

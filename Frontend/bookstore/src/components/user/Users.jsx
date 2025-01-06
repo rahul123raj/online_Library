@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import '../../assets/style/users.css';
+import { USER_API } from "../../utils/constant";
 
 const Users = () => {
   const [users, setUsers] = useState([]);
@@ -9,7 +10,7 @@ const Users = () => {
   const bool = path.startsWith('/adminportal');
 
   useEffect(() => {
-    axios.get('http://localhost:5000/bookdata/user')
+    axios.get(USER_API)
       .then((resp) => {
         setUsers(resp.data.payload); // Assuming payload is an array
         // console.log(resp.data.payload);
@@ -20,7 +21,7 @@ const Users = () => {
   const handleDelete = (id) => {
     
 
-    fetch(`http://localhost:5000/bookdata/user/${id}`, {
+    fetch(`${USER_API}/${id}`, {
       method: 'DELETE',
     })
       .then(response => {
